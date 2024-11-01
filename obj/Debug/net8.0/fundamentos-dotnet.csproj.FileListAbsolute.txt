@@ -16,3 +16,4 @@
 /home/italorocha/ProjetosGithub/fundamentos-dotnet.csproj/obj/Debug/net8.0/fundamentos-dotnet.pdb
 /home/italorocha/ProjetosGithub/fundamentos-dotnet.csproj/obj/Debug/net8.0/fundamentos-dotnet.genruntimeconfig.cache
 /home/italorocha/ProjetosGithub/fundamentos-dotnet.csproj/obj/Debug/net8.0/ref/fundamentos-dotnet.dll
+/home/italorocha/ProjetosGithub/fundamentos-dotnet.csproj/obj/Debug/net8.0/fundamentos-dotnet.sourcelink.json
