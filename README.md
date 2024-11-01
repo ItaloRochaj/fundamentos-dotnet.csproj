@@ -1,7 +1,3 @@
-Aqui está um conteúdo explicativo em Markdown sobre Operadores Aritméticos e a classe `Math` em C#.
-
----
-
 # Operadores Aritméticos e a Classe `Math` em C#
 
 ## Operadores Aritméticos
