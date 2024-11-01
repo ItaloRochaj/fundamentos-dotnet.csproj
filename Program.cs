@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using fundamentos_dotnet.Models;
 
@@ -29,16 +31,54 @@ using fundamentos_dotnet.Models;
 
 //Do While abaixo:
 
-int soma = 0 , numero = 0;
+//int soma = 0 , numero = 0;
 
 
-do //  executa independente da condicao
+//do //  executa independente da condicao
+
+//{   
+   // Console.WriteLine("Digite seu numero");
+   // numero = Convert.ToInt32(Console.ReadLine()); // apenas retorna stgring, tem que usar o Convert.ToInt32.
+     //   soma += numero;
+
+//}while(numero != 0); // verifica em primeiro lugar a condicao se verdadeira, != significa diferente.
+
+//Console.WriteLine($"Total da soma dos numeros digitados {soma}");
+
+
+
+string opcao;
+bool exibirMenu = true;
+
+while (exibirMenu)
 
 {   
-    Console.WriteLine("Digite seu numero");
-    numero = Convert.ToInt32(Console.ReadLine()); // apenas retorna stgring, tem que usar o Convert.ToInt32.
-        soma += numero;
+    Console.WriteLine("Digite a sua opcao");
+    Console.WriteLine("1 - Cadastrar cliente");
+    Console.WriteLine("2 - Buscar cliente");
+    Console.WriteLine("3 - Apagar cliente");
+    Console.WriteLine("4 - Encerrar");
 
-}while(numero != 0); // verifica em primeiro lugar a condicao se verdadeira, != significa diferente.
+    opcao = Console.ReadLine();
 
-Console.WriteLine($"Total da soma dos numeros digitados {soma}");
+    switch (opcao)
+    {   
+        case "1":
+            Console.WriteLine("Cadastro de cliente");
+            break;
+        case "2":
+            Console.WriteLine("Buscar cliente");
+            break;
+        case "3":
+            Console.WriteLine("Apagar cliente");
+            break;
+        case "4":
+            Console.WriteLine("O programa foi encerrado");
+            exibirMenu = false;
+            //Environment = (0);
+            break;
+        default:
+            Console.WriteLine("Opção inválida! Tente novamente.");
+            break;
+    }
+}
